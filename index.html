@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Tanish</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="images/hero.jpg" alt="Tanish Logo" class="hero-logo">
+        <h1>"Turning moments into masterpieces"</h1>
+        <a href="#portfolio" class="btn">View Portfolio</a>
+    </section>
+
+<!-- Portfolio Section ADD NEW ALBUMS HERE -->
+<section id="portfolio" class="gallery">
+    <h2>Portfolio</h2>
+    <div class="gallery-grid">
+        <div class="album">
+            <h3>Animals</h3>
+            <img src="images/album1/album1-cover.jpg" alt="Album 1 Cover" class="gallery-img" data-album="album1">
+        </div>
+        <div class="album">
+            <h3>Food</h3>
+            <img src="images/album2/album2-cover.jpg" alt="Album 2 Cover" class="gallery-img" data-album="album2">
+        </div>
+        <div class="album">
+            <h3>Urban Adventures</h3>
+            <img src="images/album3/album3-cover.jpg" alt="Album 3 Cover" class="gallery-img" data-album="album3">
+        </div>
+        <div class="album">
+            <h3>Landscapes Unraveled</h3>
+            <img src="images/album4/album4-cover.jpg" alt="Album 4 Cover" class="gallery-img" data-album="album4">
+        </div>
+    </div>
+</section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">×</span>
+        <span class="prev-btn">❮</span>
+        <div class="lightbox-content">
+            <h3 id="lightbox-title"></h3>
+            <img id="lightbox-img" src="" alt="Enlarged Photo">
+            <p id="lightbox-caption"></p>
+        </div>
+        <span class="next-btn">❯</span>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Jane Doe, a passionate photographer with a love for capturing life’s fleeting moments. Based in [Your City], I specialize in weddings, portraits, and landscapes.</p>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form action="https://formsubmit.co/tanishj113@gmail" method="POST" id="contact-form">
+        <input type="hidden" name="_subject" value="New Photography Inquiry">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="email" name="number" placeholder="Phone Number" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
