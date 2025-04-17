@@ -23,7 +23,7 @@ const albums = {
     album1: {
         title: "Animals",
         images: [
-            { src: 'images/album1/album1-cover.jpg', caption: 'Random pictures of animals that I took' },
+            { src: 'images/album1/IMG_4005-Enhanced-NR.jpg', caption: 'Random pictures of animals that I took' },
             { src: 'images/album1/album1-1.jpg', caption: 'Shark' },
             { src: 'images/album1/album1-2.jpg', caption: 'Zebra' },
             { src: 'images/album1/album1-3.jpg',caption: 'Tiger' } // No caption
